@@ -1,0 +1,90 @@
+/* --- Tablet / Smaller Laptops --- */
+@media (max-width: 850px) {
+    .contact-grid {
+        gap: 2rem;
+    }
+}
+
+/* --- Mobile / Small Tablet --- */
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 1.5rem;
+    }
+    
+    /* Navigation */
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Header */
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .contact-list-inline {
+        justify-content: center;
+    }
+
+    .header-actions {
+        justify-content: center;
+    }
+
+    .profile-placeholder {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* Experience & Education */
+    .job-header {
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .job-date {
+        font-size: 0.85rem;
+    }
+
+    /* Certifications */
+    .cert-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Very Small Mobile --- */
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

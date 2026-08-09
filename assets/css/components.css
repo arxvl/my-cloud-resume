@@ -1,0 +1,198 @@
+/* --- Buttons (Clean & Simple) --- */
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px; /* Sleek, modern radius */
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.btn-small {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    background-color: var(--color-black);
+    color: var(--color-card-bg);
+    border: 1px solid var(--color-black);
+}
+
+.btn-primary:hover {
+    background-color: #2a2a2a;
+    border-color: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-border);
+}
+
+.btn-outline:hover {
+    border-color: var(--color-black);
+    background-color: var(--color-hover);
+}
+
+/* --- Icons (Fixed Sizing & Alignment) --- */
+.icon {
+    width: 1.1rem; /* Scaled perfectly to match the 0.95rem text */
+    height: 1.1rem;
+    flex-shrink: 0;
+    display: block; /* Removes weird baseline spacing in browsers */
+}
+
+.icon-small {
+    width: 0.9rem; /* Scaled down for smaller project links */
+    height: 0.9rem;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* --- Social Links --- */
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.social-links-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.social-item, .link-with-icon {
+    display: inline-flex;
+    align-items: center; /* Perfectly centers the icon vertically with the text */
+    gap: 0.4rem; /* Slightly tightened the gap for a cleaner look */
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1; /* Prevents text line-height from throwing off alignment */
+    transition: var(--transition);
+}
+
+.social-item:hover, .link-with-icon:hover {
+    color: var(--color-black);
+}
+
+/* --- Tags --- */
+.tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tag {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 6px;
+    color: var(--color-text);
+}
+
+/* --- Cards (Stylish & Clean) --- */
+.card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: var(--transition);
+}
+
+/* Subtle lift effect on cards */
+.project-card:hover, .cert-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    border-color: #dcdcdc;
+}
+
+.cert-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-info p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* --- Forms (Visual only) --- */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-family: var(--font-primary);
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-black);
+}
+
+/* --- Placeholders --- */
+.placeholder {
+    background-color: var(--color-hover);
+    border: 1px dashed #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #888888;
+    font-size: 0.85rem;
+    border-radius: 8px;
+}
+
+.profile-placeholder {
+    width: 160px; /* Shrunk down for a classic resume look */
+    height: 160px;
+    border-radius: 50%;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 180px;
+}
